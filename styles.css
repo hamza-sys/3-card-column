@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    max-width: 1000px;
+    /* min-width: 540px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    /* max-width: 300px; */
+    min-width: 180px;
+    height: 450px;
+    padding: 30px 60px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+.card img {
+    width: 60px;
+    height: 40px;
+}
+
+.card h1 {
+    font-weight: 700;
+    font-size: 36px;
+    font-family: 'Big Shoulders Display';
+    color: hsl(0, 0%, 95%);
+    letter-spacing: 1px;
+}
+
+.card p {
+    font-family: 'Lexend Deca';
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+}
+
+.card button {
+    width: 130px;
+    padding: 12px 20px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    background: hsl(0, 0%, 95%);
+    margin-top: 30px;
+    cursor: pointer;
+    transition: .2s ease;
+}
+
+.card button:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);
+}
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.card-1 {
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 5px 0 0 5px;
+}
+
+.card-2 {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-3 {
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0 5px 5px 0;
+}
+
+
+@media screen and (max-width: 600px) {
+    .container {
+        margin: 40px 0;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 50%;
+        gap: 10px;
+    }
+
+    .card-1 {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-3 {
+        border-radius: 0 0 5px 5px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 750px) {
+    .container {
+        margin: 40px 0;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .card {
+        width: 60%;
+    }
+
+    .card-1 {
+        border-radius: 5px 5px 0 0;
+    }
+
+    .card-3 {
+        border-radius: 0 0 5px 5px;
+    }
+}
